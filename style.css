@@ -1,0 +1,169 @@
+.container {
+  max-width: 901px;
+  margin: 0 auto;
+}
+
+.editing {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 250px;
+}
+
+.header {
+  display: flex;
+  border-bottom: 2px solid black;
+  padding-top: 56px;
+  margin-bottom: 36px;
+}
+
+.header__title {
+  max-width: 104px;
+  color: grey;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.header__heading {
+  margin: 0 auto;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+/* Форма */
+.form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  border-bottom: 2px solid black;
+  padding-bottom: 34px;
+}
+
+.form__label {
+  font-size: 13px;
+  padding-top: 9px;
+}
+
+.form__input {
+  padding: 4px;
+  background-color: #f5f2f2;
+  border: 2px solid lightgrey;
+  max-width: 145px;
+  font-size: 15px;
+}
+
+.form__input:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.form__input--line {
+  line-height: 21px;
+}
+
+#name,
+#authors,
+#review {
+  max-width: 100%;
+}
+
+#authors-list-1,
+#authors-list-2,
+#authors-list-3,
+#authors-list-4,
+#authors-list-5 {
+  width: 132px;
+}
+
+.user {
+  position: absolute;
+  font-size: 13px;
+  font-style: italic;
+  top: 7px;
+  right: 0px;
+}
+
+.flex {
+  position: relative;
+  display: flex;
+  max-width: 729px;
+  justify-content: space-between;
+}
+
+.check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  right: -64px;
+  top: 10px;
+}
+
+.check-box {
+  position: absolute;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  right: -64px;
+  top: 10px;
+  background-color: #f5f2f2;
+  border: 2px solid lightgrey;
+}
+
+.check-input:checked + .check-box {
+  background-image: url("img/icons/checked.svg");
+  background-repeat: no-repeat;
+  background-position: 3px 0;
+}
+
+/* Обзор */
+.review {
+  padding-top: 28px;
+  padding-bottom: 59px;
+  display: grid;
+  grid-template-columns: 108px 1fr;
+}
+
+.review__heading {
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 50px;
+}
+
+.review__book-number {
+  font-weight: normal;
+}
+
+.review__book-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 36px;
+}
+
+.review__book-text--bold {
+  font-weight: 700;
+}
+
+.review__book-text-italic {
+  font-style: italic;
+  font-size: 17px;
+}
+
+.editing__button {
+  background-color: #0082aa;
+  color: white;
+  border: 2px solid transparent;
+  cursor: pointer;
+  align-self: flex-end;
+  font-size: 32px;
+  padding: 12px 58px;
+  border-radius: 16px;
+  transition: box-shadow 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.editing__button:hover {
+  background-color: white;
+  border: 2px solid #0082aa;
+  color: #0082aa;
+}
