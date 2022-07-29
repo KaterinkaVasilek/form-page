@@ -17,7 +17,7 @@
 }
 
 .header__title {
-  max-width: 104px;
+  max-width: 150px;
   color: grey;
   text-transform: uppercase;
   font-size: 9px;
@@ -36,6 +36,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 108px 1fr;
+  gap: 19px;
   border-bottom: 2px solid black;
   padding-bottom: 34px;
 }
@@ -53,25 +54,19 @@
   font-size: 15px;
 }
 
-.form__input:not(:last-child) {
-  margin-bottom: 19px;
-}
-
 .form__input--line {
   line-height: 21px;
 }
 
-#name,
-#authors,
-#review {
+.form__label textarea {
+  resize: vertical;
+}
+
+.form__input--width {
   max-width: 100%;
 }
 
-#authors-list-1,
-#authors-list-2,
-#authors-list-3,
-#authors-list-4,
-#authors-list-5 {
+.flex input {
   width: 132px;
 }
 
@@ -95,7 +90,7 @@
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-  right: -64px;
+  right: -44px;
   top: 10px;
 }
 
@@ -104,7 +99,7 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
-  right: -64px;
+  right: -44px;
   top: 10px;
   background-color: #f5f2f2;
   border: 2px solid lightgrey;
@@ -114,6 +109,10 @@
   background-image: url("img/icons/checked.svg");
   background-repeat: no-repeat;
   background-position: 3px 0;
+}
+
+.check-input:focus + .check-box {
+  border: 2px solid black;
 }
 
 /* Обзор */
@@ -131,7 +130,7 @@
 }
 
 .review__book-number {
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .review__book-text {
@@ -145,7 +144,7 @@
   font-weight: 700;
 }
 
-.review__book-text-italic {
+.review__book-text--italic {
   font-style: italic;
   font-size: 17px;
 }
